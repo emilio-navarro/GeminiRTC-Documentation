@@ -2,21 +2,21 @@
 
 A production-ready WebRTC implementation for Android with Jetpack Compose UI and Node.js signaling server. This project demonstrates real-time peer-to-peer communication with comprehensive error handling, reactive state management, and modern Android architecture patterns.
 
-## 📱 Project Overview
-**🛑 NOTE:** This repository exists as a **read-only public portfolio piece** to showcase the architecture and technical depth of the private `GeminiRTC` codebase. **Contributions, Pull Requests, and Issues are not accepted for this specific document.  Contact me if you want to be a contributor.**
+## Project Overview
+**NOTE:** This repository exists as a **read-only public portfolio piece** to showcase the architecture and technical depth of the private `GeminiRTC` codebase. **Contributions, Pull Requests, and Issues are not accepted for this specific document.  Contact me if you want to be a contributor.**
 
 **GeminiRTC** is a complete WebRTC solution featuring:
 - **Android Client**: Modern Jetpack Compose app with reactive WebRTC implementation
 - **Signaling Server**: Node.js WebSocket server for peer coordination
 - **Production Features**: Comprehensive error handling, logging, testing, and monitoring
 
-## 🎥 Video Demonstration
+## Video Demonstration
 
 Check out a live demo of the GeminiRTC application establishing a real-time data channel connection and exchanging messages.
 
 [Download the video](https://github.com/emilio-navarro/GeminiRTC-Documentation/raw/refs/heads/main/geminirtc_demo.mp4)
 
-## 🏗️ Architecture
+## Architecture
 
 ### Android Architecture
 - **UI Layer**: Jetpack Compose with Material 3 Design System
@@ -35,30 +35,30 @@ Check out a live demo of the GeminiRTC application establishing a real-time data
 - **Error Recovery**: Automatic session reset and connection recovery
 - **Memory Management**: Bounded buffers and leak prevention
 
-## 🚀 Features
+## Features
 
 ### Android Application
-- ✅ **Real-time WebRTC Communication** via data channels
-- ✅ **Modern Compose UI** with Material 3 Design System
-- ✅ **Type-safe Navigation** with Compose Navigation Graph
-- ✅ **Custom Composable Widgets** for WebRTC controls and monitoring
-- ✅ **Multiple Channel Types**: Text, JSON, Audio Stream, Video Stream, File Transfer
-- ✅ **Connection Quality Monitoring** with real-time statistics
-- ✅ **Automatic Error Recovery** with exponential backoff retry
-- ✅ **Comprehensive Logging** for debugging and monitoring
-- ✅ **Dark/Light Theme Support** with extended color schemes
-- ✅ **Connection State Visualization** with live channel status
-- ✅ **Edge-to-Edge Design** with proper system bar handling
-- ✅ **Splash Screen Integration** with Core SplashScreen API
+- **Real-time WebRTC Communication** via data channels
+- **Modern Compose UI** with Material 3 Design System
+- **Type-safe Navigation** with Compose Navigation Graph
+- **Custom Composable Widgets** for WebRTC controls and monitoring
+- **Multiple Channel Types**: Text, JSON, Audio Stream, Video Stream, File Transfer
+- **Connection Quality Monitoring** with real-time statistics
+- **Automatic Error Recovery** with exponential backoff retry
+- **Comprehensive Logging** for debugging and monitoring
+- **Dark/Light Theme Support** with extended color schemes
+- **Connection State Visualization** with live channel status
+- **Edge-to-Edge Design** with proper system bar handling
+- **Splash Screen Integration** with Core SplashScreen API
 
 ### Signaling Server
-- ✅ **Session-aware Message Routing** for reliable handshake coordination
-- ✅ **Automatic Peer Discovery** and connection establishment
-- ✅ **ICE Candidate Buffering** with size limits and cleanup
-- ✅ **Connection Recovery** after server restarts or network issues
-- ✅ **Health Check Endpoints** for monitoring and diagnostics
+- **Session-aware Message Routing** for reliable handshake coordination
+- **Automatic Peer Discovery** and connection establishment
+- **ICE Candidate Buffering** with size limits and cleanup
+- **Connection Recovery** after server restarts or network issues
+- **Health Check Endpoints** for monitoring and diagnostics
 
-## 📋 Prerequisites
+## Prerequisites
 
 ### Android Development
 - **Android Studio**: 2024.2.1 (Ladybug) or newer
@@ -72,7 +72,7 @@ Check out a live demo of the GeminiRTC application establishing a real-time data
 - **npm**: 8.0+ or higher
 - **WebSocket Support**: Modern browser or WebSocket client
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone Repository
 ```bash
@@ -111,7 +111,7 @@ cd GeminiRTC
 
 6. **Verify server is running**:
    ```
-   ✅ Output: WebRTC signaling server running on ws://10.0.0.202:8080
+   Output: WebRTC signaling server running on ws://10.0.0.202:8080
    ```
 
 #### Server Configuration:
@@ -151,7 +151,7 @@ cd GeminiRTC
    - Connect Android device or start emulator
    - Click **Run** in Android Studio
 
-## 🎨 Compose Architecture & UI Components
+## Compose Architecture & UI Components
 
 ### Modern Compose Implementation
 The GeminiRTC app showcases modern Android development using **Jetpack Compose** with a clean, modular architecture following Material 3 design principles.
@@ -193,11 +193,11 @@ fun ConnectionControls(
 )
 ```
 **Features:**
-- 📱 **Collapsible UI** with expand/collapse animation
-- 🌐 **Server URL Configuration** with validation
-- 🎛️ **Initiator Mode Toggle** for offer/answer roles
-- 🎨 **State-driven Button Design** with Material 3 styling
-- ⚡ **Real-time Connection States** (Idle, Connecting, Connected, Error)
+- **Collapsible UI** with expand/collapse animation
+- **Server URL Configuration** with validation
+- **Initiator Mode Toggle** for offer/answer roles
+- **State-driven Button Design** with Material 3 styling
+- **Real-time Connection States** (Idle, Connecting, Connected, Error)
 
 ##### 2. **ChannelCommunication** - Real-time Message Interface  
 ```kotlin
@@ -208,10 +208,10 @@ fun ChannelCommunication(
 )
 ```
 **Features:**
-- 📋 **Tab-based Interface** with PrimaryTabRow
-- 💬 **Multiple Channel Types** selection (Text, JSON, Audio, Video, File)
-- 📝 **OutlinedTextField** for message input with validation
-- 🚀 **Send Button** with loading states and error handling
+- **Tab-based Interface** with PrimaryTabRow
+- **Multiple Channel Types** selection (Text, JSON, Audio, Video, File)
+- **OutlinedTextField** for message input with validation
+- **Send Button** with loading states and error handling
 
 ##### 3. **ChannelState** - Live Connection Monitoring
 ```kotlin
@@ -219,17 +219,17 @@ fun ChannelCommunication(
 fun ChannelState(viewModel: IWebRTCViewModel)
 ```
 **Features:**
-- 🔴 **Real-time State Indicators** (Open, Connecting, Closed, Failed)
-- 📊 **LazyColumn** for efficient rendering of multiple channels
-- 🎨 **Material Icons** for visual state representation
-- ⚡ **StateFlow Integration** with automatic recomposition
+- **Real-time State Indicators** (Open, Connecting, Closed, Failed)
+- **LazyColumn** for efficient rendering of multiple channels
+- **Material Icons** for visual state representation
+- **StateFlow Integration** with automatic recomposition
 
 ##### 4. **ConnectionStatus** - Connection Quality Display
 **Features:**
-- 📈 **Connection Quality Metrics** with visual indicators  
-- 🏓 **Latency Measurements** with real-time updates
-- 📊 **WebRTC Statistics** display
-- 🎯 **Connection Info** (Initiator status, peer details)
+- **Connection Quality Metrics** with visual indicators  
+- **Latency Measurements** with real-time updates
+- **WebRTC Statistics** display
+- **Connection Info** (Initiator status, peer details)
 
 #### Material 3 Theme System
 
@@ -261,10 +261,10 @@ fun AppTheme(
 )
 ```
 **Features:**
-- 🌙 **Dark/Light Mode** with system preference detection
-- 🎨 **Dynamic Colors** (Android 12+ Material You)
-- 🔤 **Custom Typography** with LocalAppFonts provider
-- 🎯 **Extended Color Palette** beyond Material 3 defaults
+- **Dark/Light Mode** with system preference detection
+- **Dynamic Colors** (Android 12+ Material You)
+- **Custom Typography** with LocalAppFonts provider
+- **Extended Color Palette** beyond Material 3 defaults
 
 #### Compose Preview Integration
 ```kotlin
@@ -534,7 +534,7 @@ fun WebRTCScreen(viewModel: IWebRTCViewModel) {
 }
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 ### Android Dependencies (Latest 2025 Versions)
 
@@ -686,7 +686,7 @@ coroutines = "1.10.2"
 }
 ```
 
-## 🏃‍♂️ Usage Guide
+## Usage Guide
 
 ### Starting a WebRTC Connection
 
@@ -748,10 +748,10 @@ fun ConnectionControls(
 )
 ```
 **Interactive Features:**
-- 🌐 **Server URL Configuration** with OutlinedTextField validation
-- 🎛️ **Initiator Mode Toggle** (Checkbox for offer/answer role selection)
-- 📱 **Collapsible Interface** with expand/collapse animation
-- 🎯 **State-aware Button Logic**:
+- **Server URL Configuration** with OutlinedTextField validation
+- **Initiator Mode Toggle** (Checkbox for offer/answer role selection)
+- **Collapsible Interface** with expand/collapse animation
+- **State-aware Button Logic**:
   - **Idle/Error**: Shows "Connect" button (enabled)
   - **Connecting**: Shows "Connecting..." with progress indicator (disabled)
   - **Connected**: Shows "Disconnect" with red styling
@@ -780,11 +780,11 @@ fun ChannelCommunication(
 )
 ```
 **Advanced Features:**
-- 📋 **PrimaryTabRow** for channel type selection
-- 💬 **Real-time Message Input** with validation and error states
-- 🚀 **Smart Send Button** that adapts to connection state
-- 📝 **Message History** display with ScrollablePage integration
-- 🎨 **Channel-specific Styling** based on DataChannelType
+- **PrimaryTabRow** for channel type selection
+- **Real-time Message Input** with validation and error states
+- **Smart Send Button** that adapts to connection state
+- **Message History** display with ScrollablePage integration
+- **Channel-specific Styling** based on DataChannelType
 
 **Tab Implementation:**
 ```kotlin
@@ -809,11 +809,11 @@ PrimaryTabRow(
 fun ChannelState(viewModel: IWebRTCViewModel)
 ```
 **Real-time State Visualization:**
-- 🔴 **Live State Indicators** with Material Icons:
-  - 🟢 `Icons.Default.CheckCircle` (OPEN) - Ready for communication
-  - 🟡 `Icons.Default.Schedule` (CONNECTING) - Establishing connection  
-  - 🔴 `Icons.Default.Close` (CLOSED) - Disconnected
-  - ⚫ `Icons.Default.Block` (FAILED) - Connection failed
+- **Live State Indicators** with Material Icons:
+  - `Icons.Default.CheckCircle` (OPEN) - Ready for communication
+  - `Icons.Default.Schedule` (CONNECTING) - Establishing connection  
+  - `Icons.Default.Close` (CLOSED) - Disconnected
+  - `Icons.Default.Block` (FAILED) - Connection failed
 
 **StateFlow Integration:**
 ```kotlin
@@ -832,11 +832,11 @@ fun ChannelState(viewModel: IWebRTCViewModel) {
 
 #### 4. **ConnectionStatus Display**
 **Real-time Metrics:**
-- 📈 **Connection Quality Visualization** with colored indicators
-- 🏓 **Message Latency Tracking** with millisecond precision
-- 📊 **WebRTC Statistics** (bytes sent/received, packet loss)
-- 🎯 **Peer Connection Info** (initiator status, connection state)
-- 📱 **Responsive Design** that adapts to screen sizes
+- **Connection Quality Visualization** with colored indicators
+- **Message Latency Tracking** with millisecond precision
+- **WebRTC Statistics** (bytes sent/received, packet loss)
+- **Peer Connection Info** (initiator status, connection state)
+- **Responsive Design** that adapts to screen sizes
 
 #### 5. **Custom Theme Integration**
 **Extended Color Scheme Usage:**
@@ -876,7 +876,7 @@ private fun PreviewConnectionControl(
 }
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Android Testing
 
@@ -926,7 +926,7 @@ wscat -c ws://10.0.0.202:8080
 4. **Send Answer**: JSON message with `type: "answer"`
 5. **Exchange ICE**: Multiple ICE candidates between peers
 
-## 🔧 Configuration
+## Configuration
 
 ### Android Configuration
 
@@ -972,7 +972,7 @@ if (iceCandidatesBuffer.length > 50) { // Adjust limit
 }
 ```
 
-## 🚨 Error Handling
+## Error Handling
 
 ### Android Error Recovery
 
@@ -1012,7 +1012,7 @@ The app includes comprehensive error handling via `WebRTCErrorHandler`:
 - **`ping`**: Client health check request
 - **`pong`**: Server responds with current state
 
-## 📊 Logging & Monitoring
+## Logging & Monitoring
 
 ### Android Logging
 ```kotlin
@@ -1037,7 +1037,7 @@ console.log('Buffered ICE candidate (X total)');
 console.log('Session reset - server restarted');
 ```
 
-## 🔒 Security Considerations
+## Security Considerations
 
 ### Android Security
 - **HTTPS/WSS**: Use secure WebSocket connections in production
@@ -1051,30 +1051,30 @@ console.log('Session reset - server restarted');
 - **Input Validation**: Validate all incoming WebSocket messages
 - **CORS Configuration**: Restrict cross-origin access appropriately
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
 #### Connection Fails to Establish
-- ✅ **Check signaling server**: Ensure server is running and accessible
-- ✅ **Verify IP address**: Update IP in Android app to match server
-- ✅ **Check network**: Ensure devices can reach signaling server
-- ✅ **Review firewall**: Allow WebSocket traffic on port 8080
+- **Check signaling server**: Ensure server is running and accessible
+- **Verify IP address**: Update IP in Android app to match server
+- **Check network**: Ensure devices can reach signaling server
+- **Review firewall**: Allow WebSocket traffic on port 8080
 
 #### UI Not Updating
-- ✅ **StateFlow references**: Ensure ViewModel owns StateFlows
-- ✅ **Compose observation**: Verify `collectAsState()` usage
-- ✅ **Thread safety**: Check StateFlow updates on correct thread
+- **StateFlow references**: Ensure ViewModel owns StateFlows
+- **Compose observation**: Verify `collectAsState()` usage
+- **Thread safety**: Check StateFlow updates on correct thread
 
 #### ICE Connection Failures  
-- ✅ **STUN servers**: Verify STUN server accessibility
-- ✅ **NAT traversal**: May need TURN server for some networks
-- ✅ **Firewall rules**: Allow UDP traffic for WebRTC
+- **STUN servers**: Verify STUN server accessibility
+- **NAT traversal**: May need TURN server for some networks
+- **Firewall rules**: Allow UDP traffic for WebRTC
 
 #### Server Restart Issues
-- ✅ **Session reset**: App should handle reset messages from server
-- ✅ **Reconnection logic**: Verify automatic reconnection works
-- ✅ **State cleanup**: Ensure clean session state after disconnect
+- **Session reset**: App should handle reset messages from server
+- **Reconnection logic**: Verify automatic reconnection works
+- **State cleanup**: Ensure clean session state after disconnect
 
 ### Debug Commands
 
@@ -1102,7 +1102,7 @@ netstat -an | grep :8080
 tail -f signaling-server.log  # if logging to file
 ```
 
-## 📚 API Reference
+## API Reference
 
 ### WebRTC Bridge Interface
 ```kotlin
@@ -1199,7 +1199,7 @@ sealed class MessageState {
 }
 ```
 
-## 🎯 Key Architecture Patterns
+## Key Architecture Patterns
 
 ### Single Source of Truth Pattern
 ```kotlin
@@ -1247,14 +1247,14 @@ suspend fun <T> executeWithRetry(
 }
 ```
 
-## 🗺️ Roadmap & Future Development
+## Roadmap & Future Development
 
 ### **Current Status: Production Ready v1.0**
 GeminiRTC is a fully functional WebRTC demo showcasing modern Android development practices. The current implementation provides a solid foundation for real-time communication applications.
 
 ### **Planned Enhancements & Features**
 
-#### **Phase 1: Core WebRTC Improvements** 🎯
+#### **Phase 1: Core WebRTC Improvements**
 - [ ] **Video Stream Support**
   - Camera capture integration with WebRTC
   - Video rendering in Compose UI
@@ -1273,7 +1273,7 @@ GeminiRTC is a fully functional WebRTC demo showcasing modern Android developmen
   - Multiple file format support
   - Transfer speed optimization
 
-#### **Phase 2: Advanced Features** 🚀
+#### **Phase 2: Advanced Features**
 - [ ] **Multi-Peer Support**
   - Room-based connections (multiple participants)
   - Peer discovery and management
@@ -1292,7 +1292,7 @@ GeminiRTC is a fully functional WebRTC demo showcasing modern Android developmen
   - Accessibility improvements (TalkBack, large text)
   - Custom theme builder with user preferences
 
-#### **Phase 3: Production Features** 💼
+#### **Phase 3: Production Features**
 - [ ] **Analytics & Monitoring**
   - Connection quality metrics dashboard
   - Performance monitoring and alerts
@@ -1311,7 +1311,7 @@ GeminiRTC is a fully functional WebRTC demo showcasing modern Android developmen
   - Integration examples and tutorials
   - Performance benchmarking tools
 
-#### **Phase 4: Advanced Capabilities** ⚡
+#### **Phase 4: Advanced Capabilities**
 - [ ] **AI/ML Integration**
   - Real-time transcription of audio streams
   - Automatic language translation
@@ -1324,7 +1324,7 @@ GeminiRTC is a fully functional WebRTC demo showcasing modern Android developmen
   - Desktop applications (Electron/Tauri)
   - React Native version
 
-### **Research & Experimental Features** 🧪
+### **Research & Experimental Features**
 - [ ] **WebRTC Innovations**
   - WebCodecs API integration
   - WebAssembly for performance optimization
@@ -1337,22 +1337,22 @@ GeminiRTC is a fully functional WebRTC demo showcasing modern Android developmen
   - Spatial audio for immersive experiences
   - AR/VR integration possibilities
 
-## 🤝 Contributing
+## Contributing
 
-### **🔍 Exploration Welcome**
+### **Exploration Welcome**
 **Anyone is welcome to:**
-- ⭐ **Star the repository** to show support
-- 👀 **Explore the codebase** and learn from the implementation
-- 📖 **Read the documentation** and understand the architecture
-- 🐛 **Report bugs** through GitHub Issues
-- 💡 **Suggest features** and improvements
-- 📝 **Share feedback** on the implementation
+- **Star the repository** to show support
+- **Explore the codebase** and learn from the implementation
+- **Read the documentation** and understand the architecture
+- **Report bugs** through GitHub Issues
+- **Suggest features** and improvements
+- **Share feedback** on the implementation
 
-### **🔐 Selective Contribution Process**
+### **Selective Contribution Process**
 
 This project maintains high code quality and architectural integrity. To ensure the best possible contributions:
 
-#### **Step 1: Request Access** 📧
+#### **Step 1: Request Access**
 **Before cloning or submitting PRs:**
 1. **Email the maintainer**: [y2k_eclipse@hotmail.com](mailto:y2k_eclipse@hotmail.com)
 2. **Include in your request**:
@@ -1361,14 +1361,14 @@ This project maintains high code quality and architectural integrity. To ensure 
    - Specific feature/area you'd like to contribute to
    - Expected timeline for your contribution
 
-#### **Step 2: Approval Process** ✅
+#### **Step 2: Approval Process** 
 **Maintainer will evaluate based on:**
 - Technical expertise alignment with project needs
 - Quality of proposed contribution
 - Commitment to project standards
 - Available capacity for code review and mentorship
 
-#### **Step 3: Authorized Development** 🛠️
+#### **Step 3: Authorized Development** 
 **Once approved, you'll receive:**
 - Repository access permissions
 - Detailed contribution guidelines
@@ -1400,25 +1400,25 @@ This project maintains high code quality and architectural integrity. To ensure 
 - **Error Handling**: Implement comprehensive error recovery
 - **Performance**: Optimize for real-time communication requirements
 
-### **Mentorship Program** 🎓
+### **Mentorship Program** 
 **For approved contributors:**
 - **1:1 Technical Guidance**: Direct mentorship from project maintainer
 - **Architecture Reviews**: Deep-dive sessions on WebRTC implementation
 - **Code Quality Coaching**: Best practices for Android development
 - **Career Development**: Networking and professional growth opportunities
 
-### **Recognition & Rewards** 🏆
+### **Recognition & Rewards** 
 **Active contributors receive:**
 - **Public Recognition**: Featured in project documentation
 - **LinkedIn Recommendations**: Professional endorsements
 - **Technical References**: Portfolio enhancement opportunities
 - **Priority Access**: Early access to new features and updates
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Stream WebRTC**: Excellent WebRTC Android SDK (`io.getstream:stream-webrtc-android:1.1.3`)
 - **Google WebRTC**: Core WebRTC implementation and standards
@@ -1426,7 +1426,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Material Design 3**: Beautiful and accessible design system
 - **Hilt**: Powerful dependency injection framework
 - **Kotlin Coroutines**: Excellent async programming support
-## 📞 Support
+## Support
 
 ### Getting Help
 - **GitHub Issues**: [GitHub Issues](https://github.com/emilio-navarro/GeminiMQTT/issues)
